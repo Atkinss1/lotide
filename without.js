@@ -29,6 +29,7 @@ const assertArraysEqual = (arr1, arr2) => {
 //   return keptItems;
 // };
 
+// Without function creates a variable and compares two arrays, if the source matches itemsToRemove, it will not add that item to the new array.
 const without = (source, itemsToRemove) => {
   const keptItems = source.filter(item => !itemsToRemove.includes(item));
   return keptItems;
