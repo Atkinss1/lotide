@@ -20,29 +20,19 @@ const assertArraysEqual = (arr1, arr2) => {
 };
 
 const middle = (arr) => {
-  let middleIndex = [];
+  let emptyArr = [];
   if (arr.length < 3) {
-    return middleIndex;
+    return emptyArr;
   }
-  if (arr.length % 2 === 1) {
-    let middle = Math.floor(arr.length) / 2 | 0;
-    console.log(middle);
-    middleIndex.push(arr[middle]);
-    
+  let middleIndex = Math.floor(arr.length / 2);
+  if (arr.length % 2 === 0) {
+    return [arr[middleIndex - 1], arr[middleIndex]];
+  } else {
+    return arr[middleIndex];
   }
-  return middleIndex;
 };
 
 console.log(middle([1, 2, 3])); // [2]
 console.log(middle([1, 2, 3, 4, 5])); // [3]
 console.log(middle([1, 2, 3, 4])); // [2, 3]
 console.log(middle([1, 2, 3, 4, 5, 6])); // [3, 4]
-
-// assertArraysEqual(middle([1])); // => []
-// assertArraysEqual(middle([1, 2])); // => []
-
-// assertArraysEqual(middle([1, 2, 3])); // => [2]
-// assertArraysEqual(middle([1, 2, 3, 4, 5])); // => [3]
-
-// assertArraysEqual(middle([1, 2, 3, 4]));// => [2, 3]
-// assertArraysEqual(middle([1, 2, 3, 4, 5, 6]));// => [3, 4]
