@@ -1,14 +1,13 @@
 const eqArrays = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {
     return false;
-  } else {
-    for (let a = 0; a < arr1.length; a++) {
-      if (arr1[a] !== arr2[a]) {
-        return false;
-      }
-    }
-    return true;
   }
+  for (let a = 0; a < arr1.length; a++) {
+    if (arr1[a] !== arr2[a]) {
+      return false;
+    }
+  }
+  return true;
 };
 
 const assertArraysEqual = (arr1, arr2) => {
