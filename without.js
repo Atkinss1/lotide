@@ -18,17 +18,6 @@ const assertArraysEqual = (arr1, arr2) => {
   }
 };
 
-// const without = (source, itemsToRemove) => {
-//   let keptItems = [];
-//   for (let arr = 0; arr < source.length; arr++) {
-//     if (source[arr] !== itemsToRemove[arr]) {
-//       keptItems.push(source[arr]);
-//     }
-//   }
-//   return keptItems;
-// };
-
-// Without function creates a variable and compares two arrays, if the source matches itemsToRemove, it will not add that item to the new array.
 const without = (source, itemsToRemove) => {
   const keptItems = source.filter(item => !itemsToRemove.includes(item));
   return keptItems;
@@ -40,5 +29,5 @@ console.log(without([1, 2, 3], [1])); // => [2, 3]
 const words = ["hello", "world", "lighthouse"];
 console.log(without(words, ["lighthouse"])); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+console.log(assertArraysEqual(words, ["hello", "world", "lighthouse"]));
 console.log(words);
