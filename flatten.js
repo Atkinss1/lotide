@@ -24,8 +24,7 @@ const flatten = (arr) => {
     if (!Array.isArray(arr[i])) {
       flattenArr.push(arr[i]);
     } else {
-      arr[i].forEach((element) =>
-        flattenArr.push(element));
+      flattenArr = flattenArr.concat(flatten(arr[i]));
     }
   }
   return flattenArr;
