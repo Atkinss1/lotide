@@ -9,12 +9,5 @@ const assertEqual = (actual, expected) => {
   }
 };
 
+module.exports = assertEqual;
 
-// TEST CODE
-
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("hello", "hello");
-assertEqual("Hello", "Hi");
-assertEqual(33, 33);
-assertEqual(234, 12);
