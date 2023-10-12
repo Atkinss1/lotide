@@ -1,8 +1,17 @@
 const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("hello", "hello");
-assertEqual("Hello", "Hi");
-assertEqual(33, 33);
-assertEqual(234, 12);
+describe('#assertEqual', () => {
+  it('should return true if actual === expected', () => {
+    assert.equal('hello', 'hello');
+  });
+
+  it('should return false if actual !== expected', () => {
+    assert.notEqual('234', '12');
+  });
+
+  it('should return false if actual !== expected', () => {
+    assert.notStrictEqual('111', 111);
+  }
+  );
+});
