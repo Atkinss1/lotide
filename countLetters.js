@@ -28,6 +28,4 @@ const countLetters = (str) => {
   return letterCount;
 };
 
-
-console.log(countLetters('LHL'));
-console.log(countLetters('Hi, my name is Jordan.'));
+module.exports = countLetters;
