@@ -18,21 +18,21 @@ const takeUntil = require('./takeUntil');
 
 
 module.exports = {
-  head,
-  tail,
-  middle,
-  without,
-  flatten,
-  eqArrays,
   assertArraysEqual,
   assertEqual,
   assertObjectsEqual,
   countLetters,
   countOnly,
+  eqArrays,
   eqObjects,
   findKey,
   findKeyByValue,
+  flatten,
+  head,
   letterPositions,
   map,
-  takeUntil
+  middle,
+  tail,
+  takeUntil,
+  without
 };
