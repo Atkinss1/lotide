@@ -1,22 +1,4 @@
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let a = 0; a < arr1.length; a++) {
-    if (arr1[a] !== arr2[a]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = (arr1, arr2) => {
-  if (eqArrays(arr1, arr2)) {
-    console.log("The comparisons are equal");
-  } else {
-    console.log("The comparisons are not equal");
-  }
-};
+//function will take in an array containing elements including nested arrays of elements, and return a "flattened" version of the array
 
 const flatten = (arr) => {
   let flattenArr = [];
@@ -31,5 +13,3 @@ const flatten = (arr) => {
 };
 
 module.exports = flatten;
-
-console.log(assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6])); // => [1, 2, 3, 4, 5, 6]
