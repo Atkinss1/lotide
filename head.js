@@ -1,3 +1,5 @@
+// function will take in an array and return the [0] index
+
 const head = (arr) => {
   if (arr === undefined) {
     return undefined;
