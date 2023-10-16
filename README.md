@@ -16,7 +16,7 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Require it:**
 
-`const _ = require('@username/lotide');`
+`const _ = require('@jatkins/lotide');`
 
 **Call it:**
 
@@ -43,4 +43,4 @@ The following functions are currently implemented:
 * `map`: will return a new array based on the results of the callback function.
 * `takeUntil`: will return a "slice of the array with elements taken from the beginning." It should keep going until the callback/predicate returns a truthy value.
 
-"homepage": "https://github.com/owner/project#readme"
+"homepage": "https://github.com/Atkinss1/lotide/blob/master/README.md"
